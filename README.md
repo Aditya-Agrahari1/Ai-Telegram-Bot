@@ -28,7 +28,7 @@ A powerful Telegram bot powered by Google's Gemini AI, featuring multiple person
 
 1. **Clone the Repository:**
 ```bash
-git clone https://github.com/Aditya-Agrahari1/Ai-Telegram-Bot.git
+git clone https://github.com/Aditya-Agrahari1/Gemini-Bot
 cd GeminiBot
 ```
 
@@ -64,14 +64,26 @@ python main.py
 
 ## 📂 Project Structure
 ```
-GeminiBot/
-├── main.py              # Main bot entry point
-├── handlers/            # Message and command handlers
-├── utils/               # Helper functions and utilities
-├── database/            # MongoDB connection and queries
-├── config.py            # Bot configuration and constants
-├── requirements.txt     # Python dependencies
-└── README.md            # Project documentation
+chat_bot/
+├── .env
+├── config.py
+├── main.py
+├── requirements.txt
+├── handlers/
+│   ├── __init__.py
+│   ├── admin.py        # broadcast, stats commands
+│   ├── chat.py         # message handling
+│   ├── commands.py     # start, clear, help commands
+│   └── personality.py  # personality related commands
+├── database/
+│   ├── __init__.py
+│   ├── mongodb.py      # database connection
+│   └── models.py       # database operations
+├── utils/
+│   ├── __init__.py
+│   ├── decorators.py   # admin check, subscription check
+│   └── helpers.py      # common utilities
+└── README.md
 ```
 
 ## 🚀 Deployment on Koyeb
@@ -93,8 +105,5 @@ GeminiBot/
 ---
 
 Built with ❤️ by **Aditya** using **Gemini API** and **MongoDB**. ✨
-
-
-
 
 
