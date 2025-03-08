@@ -1,36 +1,43 @@
 # AI Telegram Bot
 
-A Telegram bot powered by Google's Gemini AI with multiple personalities and admin features.
+A powerful Telegram bot powered by Google's Gemini AI, featuring multiple personalities, admin controls, and user activity logging.
 
-## Features
+## 🚀 Features
 
-- 🤖 AI Chat with Context Memory
-- 🎭 Multiple Bot Personalities
-- 📊 Admin Statistics Dashboard
-- 📢 Broadcast Messages
-- 📝 Chat History Management
-- 🔐 Channel Subscription Check
-- 📋 Automatic User Activity Logging
+- 🤖 **AI Chat with Context Memory:** Natural conversations with multi-turn context handling.
+- 🎭 **Multiple Bot Personalities:** Switch between different conversational styles.
+- 📊 **Admin Statistics Dashboard:** Track user activity, message counts, and real-time insights.
+- 📢 **Broadcast Messages:** Send announcements to all users or specific segments.
+- 📝 **Chat History Management:** Store conversations in MongoDB for persistence.
+- 🔐 **Channel Subscription Check:** Force users to join a channel before using the bot, with a 'Join & Try Again' button.
+- 📋 **Automatic User Activity Logging:** Log new user registrations (only once) and interactions.
 
-Commands
-- /start - Start the bot
-- /personality - Change bot's personality
-- /clear - Clear chat history
-- /help - Show help message
-Admin Commands:
-- /broadcast - Send message to all users
-- /stats - View bot statistics
+## 🛠️ Commands
 
-## Setup
+### User Commands
+- `/start` - Start the bot and initiate a chat.
+- `/personality` - Change the bot's personality.
+- `/clear` - Clear the current chat history.
+- `/help` - Show available commands and their descriptions.
 
-1. Clone the Repository:
-git clone https://github.com/yourusername/GeminiBot.git
+### Admin Commands
+- `/broadcast` - Send a message to all users (or specific segments).
+- `/stats` - View real-time bot statistics and user metrics.
+
+## 🏗️ Setup Instructions
+
+1. **Clone the Repository:**
+```bash
+git clone https://github.com/Aditya-Agrahari1/Ai-Telegram-Bot.git
 cd GeminiBot
+```
 
-2. Install Dependencies:
+2. **Install Dependencies:**
+```bash
 pip install -r requirements.txt
+```
 
-3. Create a `.env` file with your credentials:
+3. **Create a `.env` file with your credentials:**
 ```env
 TELEGRAM_TOKEN=your_telegram_bot_token
 GOOGLE_API_KEY=your_gemini_api_key
@@ -39,7 +46,35 @@ ADMIN_ID=your_telegram_id
 TELEGRAM_LOG_CHANNEL=your_log_channel_id
 TELEGRAM_CHANNEL_USERNAME=your_channel_username
 ```
-## Deployment on Koyeb
+
+4. **Set up the log channel:**
+- Create a new channel in Telegram.
+- Add your bot as an administrator.
+- Set `TELEGRAM_LOG_CHANNEL` in `.env` to the channel ID.
+
+The bot will automatically log:
+- New user registrations (only once per user).
+- User activity statistics and message counts.
+- System notifications and error reports.
+
+5. **Run the Bot:**
+```bash
+python main.py
+```
+
+## 📂 Project Structure
+```
+GeminiBot/
+├── main.py              # Main bot entry point
+├── handlers/            # Message and command handlers
+├── utils/               # Helper functions and utilities
+├── database/            # MongoDB connection and queries
+├── config.py            # Bot configuration and constants
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
+```
+
+## 🚀 Deployment on Koyeb
 
 1. Fork this repository
 2. Sign up for a [Koyeb account](https://app.koyeb.com)
@@ -54,15 +89,12 @@ TELEGRAM_CHANNEL_USERNAME=your_channel_username
      * `TELEGRAM_LOG_CHANNEL`
      * `TELEGRAM_CHANNEL_USERNAME`
 4. Deploy!
-4. Set up the log channel:
-- Create a new channel in Telegram
-- Add your bot as an administrator
-- Set TELEGRAM_LOG_CHANNEL in .env to the channel ID
-- The bot will automatically log:
-  - New user registrations
-  - User activity statistics
-  - Error reports
-  - System notifications
 
-5. Run the Bot:
-python main.py
+---
+
+Built with ❤️ by **Aditya** using **Gemini API** and **MongoDB**. ✨
+
+
+
+
+
