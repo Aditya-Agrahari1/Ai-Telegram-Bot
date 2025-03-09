@@ -5,6 +5,7 @@ A powerful Telegram bot powered by Google's Gemini AI, featuring multiple person
 ## 🚀 Features
 
 - 🤖 **AI Chat with Context Memory:** Natural conversations with multi-turn context handling.
+- 🎨 **AI Image Generation:** Create images from text prompts using Pollination.ai's models.
 - 🎭 **Multiple Bot Personalities:** Switch between different conversational styles.
 - 📊 **Admin Statistics Dashboard:** Track user activity, message counts, and real-time insights.
 - 📢 **Broadcast Messages:** Send announcements to all users or specific segments.
@@ -18,6 +19,7 @@ A powerful Telegram bot powered by Google's Gemini AI, featuring multiple person
 - `/start` - Start the bot and initiate a chat.
 - `/personality` - Change the bot's personality.
 - `/clear` - Clear the current chat history.
+- `/gen <prompt>` - Generate custom images from text descriptions
 - `/help` - Show available commands and their descriptions.
 
 ### Admin Commands
@@ -69,6 +71,7 @@ chat_bot/
 ├── config.py
 ├── main.py
 ├── requirements.txt
+├── app.py
 ├── handlers/
 │   ├── __init__.py
 │   ├── admin.py        # broadcast, stats commands
