@@ -30,6 +30,7 @@ class TelegramBot:
         self.app.add_handler(CommandHandler("personality", self.personality_handler.personality_command))
         self.app.add_handler(CommandHandler("broadcast", self.admin_handler.broadcast_command))
         self.app.add_handler(CommandHandler("stats", self.admin_handler.stats_command))
+        self.app.add_handler(CommandHandler("gen", self.chat_handler.handle_generate_image))  # New command
         
         # Message handler
         self.app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, self.chat_handler.handle_message))
