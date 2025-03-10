@@ -75,3 +75,6 @@ class TelegramBot:
 if __name__ == "__main__":
     bot = TelegramBot()
     bot.run()
+
+# ©️Aditya A
+# Remember to star our GitHub repository! https://github.com/Aditya-Agrahari1/GeminiChatBot #SupportOpenSource❤️
