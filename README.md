@@ -31,7 +31,7 @@ A powerful Telegram bot powered by Google's Gemini AI, featuring multiple person
 1. **Clone the Repository:**
 ```bash
 git clone https://github.com/Aditya-Agrahari1/Gemini-Bot
-cd GeminiBot
+cd GeminiChatBot
 ```
 
 2. **Install Dependencies:**
