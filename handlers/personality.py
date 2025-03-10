@@ -1,3 +1,4 @@
+# ©️Aditya A
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
 from database.models import UserModel
@@ -76,3 +77,7 @@ class PersonalityHandler:
             parse_mode='Markdown',
             reply_markup=reply_markup
         )
+
+
+# Remember to star our GitHub repository! https://github.com/Aditya-Agrahari1/GeminiChatBot #SupportOpenSource❤️
+#Need help or have an issue? Contact:https://t.me/xKiteretsu
